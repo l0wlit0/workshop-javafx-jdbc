@@ -8,9 +8,9 @@ import java.util.List;
 
 public class DepartmentService {
 
-    private final DepartmentDao dao = DaoFactory.createDepartmentDao();
+    private DepartmentDao dao = DaoFactory.createDepartmentDao();
 
-    public List<Department> findaAll(){
+    public List<Department> findAll(){
         return dao.findAll();
     }
 
